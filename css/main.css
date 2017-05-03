@@ -369,7 +369,7 @@ template {
 [hidden] {
   display: none; }
 
-html, body {
+html, body, .document .letter pre {
   margin: 0 !important; }
 
 html, body {
@@ -405,6 +405,8 @@ html, body {
   padding: 0.5cm;
   width: 8.5in;
   height: 11in; }
+  .document:not(:first-child) {
+    margin-top: .5cm; }
   .document section {
     display: flex;
     flex-direction: column; }
@@ -413,6 +415,10 @@ html, body {
       font-weight: bold; }
     .document section .detail {
       flex: auto; }
+  .document .header {
+    height: 2in;
+    justify-content: space-between;
+    align-self: flex-start; }
   .document .name h1 {
     margin: 0 0 -.5rem 0;
     letter-spacing: 20px;
@@ -423,9 +429,11 @@ html, body {
     line-height: .8em;
     text-transform: uppercase; }
   .document .contact {
+    display: flex;
     justify-content: space-around;
     text-transform: uppercase;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-self: flex-start; }
   .document .skills {
     display: flex;
     flex-direction: row;
@@ -448,3 +456,18 @@ html, body {
     .document .awards .award {
       display: flex;
       flex: 0 0 50%; }
+  .document .letter {
+    flex: auto;
+    margin-top: .5in;
+    justify-content: space-between; }
+    .document .letter pre {
+      font-size: inherit;
+      font-weight: inherit;
+      font-family: inherit;
+      color: #2a2a2a;
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color: initial; }
+    .document .letter .signature {
+      text-align: right; }
+      .document .letter .signature img {
+        width: 300px; }

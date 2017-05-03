@@ -16,6 +16,10 @@ html, body {
 
 .document {
 
+  &:not(:first-child) {
+    margin-top: .5cm;
+  }
+
   @media print {
 
   }
@@ -33,6 +37,7 @@ html, body {
   section { 
     display: flex;
     flex-direction: column;
+    // flex: 1;
     
     .type{
       flex: 0 0 4cm;
@@ -42,6 +47,12 @@ html, body {
     .detail {
       flex: auto;
     }
+  }
+
+  .header {
+    height: 2in;
+    justify-content: space-between;
+    align-self: flex-start;
   }
 
   .name {
@@ -59,9 +70,11 @@ html, body {
   }
 
   .contact {
+    display: flex;
     justify-content: space-around;
     text-transform: uppercase;
     flex-direction:row;
+    justify-self: flex-start;
   }
 
   .skills {
@@ -91,7 +104,6 @@ html, body {
         margin-bottom: 0;
       }
     }
-
   }
 
   .awards {
@@ -100,6 +112,31 @@ html, body {
     .award {
       display: flex;
       flex: 0 0 50%;
+    }
+  }
+
+  .letter {
+    flex: auto;
+    margin-top: .5in;
+    justify-content: space-between;
+
+    pre {
+      @extend %margin-zero;
+      
+      font-size: inherit;
+      font-weight: inherit;
+      font-family: inherit;
+      color: #2a2a2a;
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color: initial;
+
+    }
+
+    .signature {
+      text-align: right;
+      img {
+        width: 300px;
+      }
     }
   }
 }
