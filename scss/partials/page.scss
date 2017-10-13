@@ -21,10 +21,16 @@ html, body {
   }
 
   @media print {
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    background-image: initial;
 
   }
 
-  @extend %gradient-text;
+  @media screen {
+    @extend %gradient-text;
+  }
+  
   display: flex;
   flex-direction: column;
   justify-content: space-around;

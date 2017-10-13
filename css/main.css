@@ -407,6 +407,11 @@ html, body {
   height: 11in; }
   .document:not(:first-child) {
     margin-top: .5cm; }
+  @media print {
+    .document {
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color: initial;
+      background-image: initial; } }
   .document section {
     display: flex;
     flex-direction: column; }
