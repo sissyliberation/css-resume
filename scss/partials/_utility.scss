@@ -17,7 +17,15 @@
 }
 
 .line {
-  @extend %gradient-background;
+	@extend %gradient-background;
+  @media print {
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    background-image: initial;
+
+  }
+
+  
   height: 3px;
   width: 100%;
 }
