@@ -375,23 +375,22 @@ html, body, .document .letter pre {
 html, body {
   padding: 0 !important; }
 
-.document, .line {
-  background-image: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%); }
-
-.document {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
 .line {
   height: 3px;
   width: 100%; }
+  @media print {
+    .line {
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color: initial;
+      background-image: initial; } }
 
 html, body {
   width: 100%;
   height: 100%;
-  font-family: 'Economica', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   text-rendering: optimizeLegibility;
-  font-size: 16px; }
+  font-size: 11px;
+  font-weight: 100; }
 
 @page {
   margin: 0; }
@@ -417,20 +416,16 @@ html, body {
     flex-direction: column; }
     .document section .type {
       flex: 0 0 4cm;
-      font-weight: bold; }
+      font-weight: normal; }
     .document section .detail {
       flex: auto; }
   .document .header {
-    height: 2in;
-    justify-content: space-between;
-    align-self: flex-start; }
+    height: 1in;
+    justify-content: space-between; }
   .document .name h1 {
-    margin: 0 0 -.5rem 0;
-    letter-spacing: 20px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-weight: lighter;
-    font-size: 4.5em;
+    font-size: 3.5em;
     line-height: .8em;
     text-transform: uppercase; }
   .document .contact {
@@ -456,6 +451,15 @@ html, body {
     margin-bottom: 0.25cm; }
     .document .jobs .job:last-child {
       margin-bottom: 0; }
+  .document .projects {
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .document .projects .project {
+      display: flex;
+      flex: 0 0 50%;
+      margin-bottom: 0.25cm; }
+      .document .projects .project:nth-last-of-type(-n+2) {
+        margin-bottom: 0; }
   .document .awards {
     flex-direction: row; }
     .document .awards .award {

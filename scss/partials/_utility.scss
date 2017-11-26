@@ -11,13 +11,13 @@
 }
 
 %gradient-text {
-  @extend %gradient-background;
+  // @extend %gradient-background;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .line {
-	@extend %gradient-background;
+	// @extend %gradient-background;
   @media print {
     -webkit-background-clip: initial;
     -webkit-text-fill-color: initial;
