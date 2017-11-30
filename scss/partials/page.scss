@@ -60,29 +60,28 @@ html, body {
   .header {
     height: 1in;
     justify-content: space-between;
-    // align-self: flex-start;
-  }
 
-  .name {
+    .name {
 
-    h1 {
-      // margin: 0 0 -.5rem 0;
-      // letter-spacing: 20px;
-      text-align: center;
-      font-weight: lighter;
-      font-size: 3.5em;
-      line-height: .8em;
+      h1 {
+        text-align: center;
+        font-weight: lighter;
+        font-size: 3.5em;
+        line-height: .8em;
+        text-transform: uppercase;
+      }
+    }
+
+    .contact {
+      display: flex;
+      justify-content: space-around;
       text-transform: uppercase;
+      flex-direction:row;
+      justify-self: flex-start;
     }
   }
 
-  .contact {
-    display: flex;
-    justify-content: space-around;
-    text-transform: uppercase;
-    flex-direction:row;
-    justify-self: flex-start;
-  }
+  
 
   .skills {
     display: flex;
