@@ -476,7 +476,9 @@ html, body {
       font-family: inherit;
       color: #2a2a2a;
       -webkit-background-clip: initial;
-      -webkit-text-fill-color: initial; }
+      -webkit-text-fill-color: initial;
+      white-space: pre-line;
+      padding: 0 1in; }
     .document .letter .signature {
       text-align: right; }
       .document .letter .signature img {
