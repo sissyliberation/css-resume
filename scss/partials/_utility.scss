@@ -5,27 +5,3 @@
 %padding-zero {
   padding: 0 !important;
 }
-
-%gradient-background {
-	background-image: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%);
-}
-
-%gradient-text {
-  // @extend %gradient-background;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.line {
-	// @extend %gradient-background;
-  @media print {
-    -webkit-background-clip: initial;
-    -webkit-text-fill-color: initial;
-    background-image: initial;
-
-  }
-
-  
-  height: 3px;
-  width: 100%;
-}
