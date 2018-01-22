@@ -381,7 +381,8 @@ html, body {
   font-family: 'Source Code Pro', monospace;
   text-rendering: optimizeLegibility;
   font-size: 11px;
-  font-weight: 100; }
+  font-weight: 100;
+  color: #252729; }
 
 @page {
   margin: 0; }
@@ -403,10 +404,11 @@ html, body {
       box-shadow: none; } }
   .document .header .name h1 {
     text-align: center;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 3.5em;
     line-height: .8em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #252729; }
   .document .header .contact {
     display: flex;
     justify-content: space-around;
@@ -420,14 +422,15 @@ html, body {
       font-weight: bold;
       font-size: 1.2em;
       text-transform: uppercase;
-      flex: 0 0 4.1cm; }
+      flex: 0 0 4.1cm;
+      color: #252729; }
     .document section .heading:after {
       content: "";
       margin: 0.125cm 0;
       flex: auto;
       background-repeat: repeat-x;
       background-size: 16px 3px;
-      background-image: radial-gradient(circle closest-side, #656769 calc(100% - 0.5px), transparent 100%); }
+      background-image: radial-gradient(circle closest-side, #252729 calc(100% - 0.5px), transparent 100%); }
   .document section .content {
     display: flex;
     flex-direction: column; }
@@ -439,8 +442,13 @@ html, body {
         font-style: italic; }
       .document section .content .type div:nth-child(3) {
         font-size: 10px; }
-    .document section .content .detail {
+    .document section .content .details {
       flex: auto; }
+      .document section .content .details .detail {
+        display: flex; }
+        .document section .content .details .detail:before {
+          content: '-';
+          padding-right: .5em; }
   .document .skills .skill {
     display: flex;
     margin-bottom: 0.25cm; }
