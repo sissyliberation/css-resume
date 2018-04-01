@@ -69,7 +69,7 @@ html, body {
         font-weight: bold;
         font-size: 1.2em;
         text-transform: uppercase;
-        flex: 0 0 4.1cm;
+        flex: 0 0 4.5cm;
         color: $dark;
       }
       
@@ -88,7 +88,7 @@ html, body {
       flex-direction: column;
       
       .type{
-        flex: 0 0 4.1cm;
+        flex: 0 0 4.5cm;
         
         div:first-child {
           font-weight: normal;
@@ -144,27 +144,27 @@ html, body {
 
   .projects {
 
-    .content {
-      flex-direction: row; 
-      flex-wrap: wrap;
-    }
-
     .project {
       display: flex;
-      flex: 0 0 50%;
+      flex-direction: row;
       margin-bottom: 0.25cm;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
   .awards {
-    .content {
-      flex-direction: row; 
-      flex-wrap: wrap;
-    }
 
     .award {
       display: flex;
-      flex: 0 0 50%;
+      flex-direction: row;
+      margin-bottom: 0.25cm;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 

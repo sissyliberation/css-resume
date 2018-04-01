@@ -422,7 +422,7 @@ html, body {
       font-weight: bold;
       font-size: 1.2em;
       text-transform: uppercase;
-      flex: 0 0 4.1cm;
+      flex: 0 0 4.5cm;
       color: #252729; }
     .document section .heading:after {
       content: "";
@@ -435,7 +435,7 @@ html, body {
     display: flex;
     flex-direction: column; }
     .document section .content .type {
-      flex: 0 0 4.1cm; }
+      flex: 0 0 4.5cm; }
       .document section .content .type div:first-child {
         font-weight: normal; }
       .document section .content .type div:nth-child(2) {
@@ -461,19 +461,18 @@ html, body {
     margin-bottom: 0.25cm; }
     .document .jobs .job:last-child {
       margin-bottom: 0; }
-  .document .projects .content {
-    flex-direction: row;
-    flex-wrap: wrap; }
   .document .projects .project {
     display: flex;
-    flex: 0 0 50%;
-    margin-bottom: 0.25cm; }
-  .document .awards .content {
     flex-direction: row;
-    flex-wrap: wrap; }
+    margin-bottom: 0.25cm; }
+    .document .projects .project:last-child {
+      margin-bottom: 0; }
   .document .awards .award {
     display: flex;
-    flex: 0 0 50%; }
+    flex-direction: row;
+    margin-bottom: 0.25cm; }
+    .document .awards .award:last-child {
+      margin-bottom: 0; }
   .document .letter {
     flex: auto;
     margin-top: .5in;
