@@ -390,7 +390,7 @@ html, body {
 .document {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 auto;
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
   padding: 0.5cm;
@@ -405,22 +405,24 @@ html, body {
   .document .header .name h1 {
     text-align: center;
     font-weight: normal;
-    font-size: 3.5em;
+    font-size: 3.2em;
     line-height: .8em;
+    margin: .5em 0;
+    margin: 0;
     text-transform: uppercase;
     color: #252729; }
   .document .header .contact {
     display: flex;
-    justify-content: space-around;
-    text-transform: uppercase;
+    justify-content: space-between;
     flex-direction: row;
-    justify-self: flex-start; }
+    justify-self: flex-start;
+    margin-bottom: 1em; }
   .document section .heading {
     display: flex;
     padding: 0.125cm 0; }
     .document section .heading div {
       font-weight: bold;
-      font-size: 1.2em;
+      font-size: 1.4em;
       text-transform: uppercase;
       flex: 0 0 4.5cm;
       color: #252729; }
@@ -445,7 +447,10 @@ html, body {
     .document section .content .details {
       flex: auto; }
       .document section .content .details .detail {
-        display: flex; }
+        display: flex;
+        margin-bottom: 0.0625cm; }
+        .document section .content .details .detail:last-child {
+          margin-bottom: 0; }
         .document section .content .details .detail:before {
           content: '-';
           padding-right: .5em; }
