@@ -178,7 +178,9 @@ html, body {
   .letter {
     flex: auto;
     margin-top: .5in;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     pre {
       @extend %margin-zero;
@@ -197,7 +199,7 @@ html, body {
       text-align: right;
       
       img {
-        width: 300px;
+        width: 100px;
       }
     }
   }

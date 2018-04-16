@@ -481,7 +481,9 @@ html, body {
   .document .letter {
     flex: auto;
     margin-top: .5in;
-    justify-content: space-between; }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
     .document .letter pre {
       font-size: inherit;
       font-weight: inherit;
@@ -494,4 +496,4 @@ html, body {
     .document .letter .signature {
       text-align: right; }
       .document .letter .signature img {
-        width: 300px; }
+        width: 100px; }
